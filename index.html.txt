@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missing Persons</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <header>
+        <h1>Missing Persons</h1>
+    </header>
+
+    <main>
+        <section id="search">
+            <input type="text" id="searchBar" placeholder="Search by name or location...">
+        </section>
+
+        <section id="missing-list">
+            <div class="person-card" data-coordinates="[-73.935242, 40.730610]">
+                <img src="person1.jpg" alt="Photo of John Doe">
+                <h2>John Doe</h2>
+                <p>Date Missing: 12/05/2023</p>
+                <p>Last Seen: New York City, NY</p>
+            </div>
+            <div class="person-card" data-coordinates="[-118.243683, 34.052235]">
+                <img src="person2.jpg" alt="Photo of Jane Smith">
+                <h2>Jane Smith</h2>
+                <p>Date Missing: 03/01/2023</p>
+                <p>Last Seen: Los Angeles, CA</p>
+            </div>
+            <div class="person-card" data-coordinates="[-87.629799, 41.878113]">
+                <img src="person3.jpg" alt="Photo of Michael Brown">
+                <h2>Michael Brown</h2>
+                <p>Date Missing: 06/10/2022</p>
+                <p>Last Seen: Chicago, IL</p>
+            </div>
+            <div class="person-card" data-coordinates="[-71.537994, 42.360253]">
+                <img src="person4.jpg" alt="Photo of Emily Davis">
+                <h2>Emily Davis</h2>
+                <p>Date Missing: 10/15/2023</p>
+                <p>Last Seen: Concord, NH</p>
+            </div>
+            <div class="person-card" data-coordinates="[-72.677043, 41.763711]">
+                <img src="person5.jpg" alt="Photo of Sarah Lee">
+                <h2>Sarah Lee</h2>
+                <p>Date Missing: 08/02/2023</p>
+                <p>Last Seen: Hartford, CT</p>
+            </div>
+            <div class="person-card" data-coordinates="[-75.490183, 39.158169]">
+                <img src="person6.jpg" alt="Photo of Kevin Miller">
+                <h2>Kevin Miller</h2>
+                <p>Date Missing: 11/20/2022</p>
+                <p>Last Seen: Dover, DE</p>
+            </div>
+            <div class="person-card" data-coordinates="[-80.843124, 35.227085]">
+                <img src="person7.jpg" alt="Photo of Chloe Johnson">
+                <h2>Chloe Johnson</h2>
+                <p>Date Missing: 04/12/2023</p>
+                <p>Last Seen: Charlotte, NC</p>
+            </div>
+            <div class="person-card" data-coordinates="[-71.477429, 41.580095]">
+                <img src="person8.jpg" alt="Photo of Noah White">
+                <h2>Noah White</h2>
+                <p>Date Missing: 09/14/2023</p>
+                <p>Last Seen: Providence, RI</p>
+            </div>
+        </section>
+
+        <section id="map">
+            <h2>Last Seen Locations</h2>
+            <div id="mapContainer"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Missing Persons</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
